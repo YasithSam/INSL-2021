@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSL Landing Page</title>
+
+    <!-- favicon icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- plugin styles -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/seolight-icons.css">
+    <!-- template style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        @media only screen and (max-width: 600px) {
+                
+                .service-one{
+                    overflow-y:hidden ;
+                }
+         }
+
+            #countdown .container li {
+                display: inline-block;
+                font-size: 1em;
+                list-style-type: none;
+                padding: 3em;
+                text-transform: uppercase;
+            }
+            #countdown .container li span {
+                display: block;
+                font-size: 4.5rem;
+            }
+            @media all and (max-width: 768px) {
+                h1 {
+                    font-size: 1.5rem;
+                }
+                
+                #countdown .container li {
+                    font-size: 1.125rem;
+                    padding: .75rem;
+                }
+                
+                #countdown .container li span {
+                    font-size: 3.375rem;
+                }
+                .page-wrapper{
+                    margin: 0;
+                }
+           }    
+    </style>
+</head>
+
+<body>
+
+   <!-- Load Facebook SDK for JavaScript -->
+   <div id="fb-root"></div>
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v10.0'
+       });
+     };
+
+     (function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+
+   <!-- Your Chat Plugin code -->
+   <div class="fb-customerchat"
+     attribution="setup_tool"
+     page_id="2047005378906480">
+   </div>
+    <div class="page-wrapper" style="overflow-x: hidden; background-color: #121212;">
+        <!-- <div class="topbar-one">
+            <div class="container">
+                <div class="topbar-one__left">
+                    <p><i class="fa fa-map-marker"></i>380 St Kilda Road, Melbourne, Australia</p>
+                </div><!-- /.topbar-one__left -->
+                <!-- <div class="topbar-one__right">
+                    <p><i class="fa fa-clock"></i>Open Hours: Mon - Sat: 8 am - 5 pm, Sunday: CLOSED</p>
+                </div><!-- /.topbar-one__right -->
+            <!-- </div><!-- /.container -->
+        <!-- </div>/.topbar-one --> 
+        <header class="site-header-one stricky" style="background-color: white;">
+            <div class="container">
+                <div class="site-header-one__logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-3-1.png" alt="" style="margin-bottom: 10px;">
+                    </a>
+                    <a href="#" class="side-menu__toggler"><i class="fa fa-bars"></i></a>
+                </div><!-- /.site-header-one__logo -->
+                <div class="main-nav__main-navigation">
+                    <ul class="main-nav__navigation-box" style="color: wheat;">
+                        <li>
+                            <a href="index.html">Home</a> 
+                        </li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#past">Past Years</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                       
+                        
+
+                       
+                        
+                    </ul><!-- /.main-nav__navigation-box -->
+                </div><!-- /.main-nav__main-navigation -->
+                <div class="main-nav__right">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9OzD2uVwMI6vc4Ndp8oob9sILyiWUJ5Kn8hXX1aP_V7puWA/viewform" class="thm-btn main-nav__btn">Register Now</a>
+                </div><!-- /.main-nav__right -->
+            </div><!-- /.container -->
+        </header><!-- /.site-header-one -->
+        <section class="banner-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="banner-one__content">
+                            <h3 style="color: #f98d24;" class="animate__backInUp">Welcome to IEEE Innovation Nation Sri Lanka </h3>
+                            <p style="color: white;">The excellence of guidance, mentorship
+                                and finances to take your idea or product to the next level.</p>
+                            <div class="banner-one__btn-block">
+                                <!-- <a href="https://www.youtube.com/watch?v=KssOT2QVg-M" class="banner-one__video video-popup"><i class="fa fa-play"></i></a>/.banner-one__video -->
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9OzD2uVwMI6vc4Ndp8oob9sILyiWUJ5Kn8hXX1aP_V7puWA/viewform" class="thm-btn" style="background: linear-gradient(27deg, rgba(253,141,33,1) 0%, rgba(242,86,38,1) 49%, rgba(213,24,58,1) 95%);">Apply Now</a><!-- /.thm-btn -->
+                            </div><!-- /.banner-one__btn-block -->
+                        </div><!-- /.banner-one__content -->
+                    </div><!-- /.col-lg-5 -->
+                    <div class="col-xl-7">
+                        <div class="banner-one__images wow fadeInRight" data-wow-duration="1500ms">
+                            <img src="assets/images/Asset 2.png" class="banner-one__image-1 float-bob-y-2" alt="">
+                            
+                           
+                        </div><!-- /.banner-one__images -->
+                    </div><!-- /.col-lg-7 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.banner-one -->
+       
+        
+    
+       
+        	
+			 <section id="countdown" style="background:linear-gradient(27deg, rgba(253,141,33,1) 0%, rgba(242,86,38,1) 49%, rgba(213,24,58,1) 95%);">
+                <br>
+                <center><h3 style="font-family: Poppins; font-size: 32px; color: #121212;"><img src="./assets/images/rocket.png">Registration Ends:</h3></center>
+                
+				<div class="container" style="color: #fff; margin: 0 auto; text-align: center">
+					
+                    <div id="countdown">
+                        <ul>
+                            <li><span id="days"></span><br>days</li>
+                            <li><span id="hours"></span><br>Hours</li>
+                            <li><span id="minutes"></span><br>Minutes</li>
+                            <li><span id="seconds"></span><br>Seconds</li>
+                        </ul>
+                     </div>
+				</div>
+            </section>  
+		
+        <section class="service-four" style="background-color: #121212;">
+
+            <div class="service-four__images wow fadeInLeft" data-wow-duration="1500ms">
+                <img src="assets/images/1-2.png" class="service-four__image-1" alt="">
+                <img src="assets/images/resources/rocket [Converted]-01.png" class="service-four__image-2 float-bob-y-2"
+                    alt="">
+            </div><!-- /.service-four__images -->
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8">
+                        <div class="service-four__content">
+                            <div class="block-title text-left">
+                                <div class="block-title__line"></div><!-- /.block-title__line -->
+                                <h3 style="color: white;">Why you should be a part of INSL?</h3>
+                                
+                            </div><!-- /.block-title text-center -->
+                            <div class="service-four__box">
+                                <i class="seolight-icon-bank-building"></i>
+                                <h3><a href="service-details.html">Economic Potency</a></h3>
+                                <p>Be a part of Innovation Nation Sri Lanka 2021 in order to contribute towards the economic dynamism by spurring innovation.</p>
+                            </div><!-- /.service-four__box -->
+                            <div class="service-four__box">
+                                <i class="seolight-icon-light-bulb"></i>
+                                <h3><a href="service-details.html">Innovativeness</a></h3>
+                                <p>It will be a platform for new entrepreneurs to bring new ideas to the table, much needed to stir innovation and generate competition.</p>
+                            </div><!-- /.service-four__box -->
+                        </div><!-- /.service-four__content -->
+                    </div><!-- /.col-lg-8 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.service-four -->
+        
+        <section class="service-one wow slideInUp" style="background-color: #121212;" id="benefits">
+            <img src="assets/images/2.png" class="service-one__shape-1" alt="">
+            <div class="container">
+                <div class="block-title text-center">
+                    <div class="block-title__line"></div><!-- /.block-title__line -->
+                    <h3> <img src="./assets/images/growth.png"></img>     How will you benefit from IEEE INSL?</h3>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do <br> eiusmod tempor incididunt ut
+                        labore et dolore.</p> -->
+                </div><!-- /.block-title text-center -->
+
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1500ms"
+                        data-wow-delay="000ms">
+                        <div class="service-one__single">
+                            <div class="service-one__icon color-1">
+                                <img src="./assets/images/idea-2.png"></img>
+                            </div><!-- /.service-one__icon -->
+                            <h3 style="color: black;"><a href="service-details.html">A Platform for Growth</a></h3>
+                            <p>It is a platform where creativity meets its marketplace, where young minds get to know their opportunities and unite to learn, innovate, and grow as one.</p>
+                            
+
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-3 -->
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1500ms"
+                        data-wow-delay="100ms">
+                        <div class="service-one__single">
+                            
+                            <img src="./assets/images/connect.png"></img>
+                       
+                            <h3 style="color: black;"><a href="service-details.html">Get Connected</a></h3>
+                            <p>IEEE IN will Integrate students, industry professionals, and academia into a collaborative space that celebrates the opportunities created by tech entrepreneurship.</p>
+                          
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-3 -->
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1500ms"
+                        data-wow-delay="200ms">
+                        <div class="service-one__single">
+                            <div class="service-one__icon color-3">
+                                <i class="seolight-icon-layers"></i>
+                            </div><!-- /.service-one__icon -->
+                            <h3 style="color: black;"><a href="service-details.html">Sharpen Your Entrepreneurial Skills
+
+                            </a></h3>
+                            <p>It will provide comprehensive training focused on design thinking, market analysis, financial projections, business models, soft skill development, company law, technical aspects relevant to the selected project ideas, etc.</p>
+                          
+
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-3 -->
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1500ms"
+                        data-wow-delay="300ms">
+                        <div class="service-one__single">
+                            <div class="service-one__icon color-4">
+                                <i class="seolight-icon-target"></i>
+                            </div><!-- /.service-one__icon -->
+                            <h3 style="color: black;"><a href="service-details.html">Make Your Way to the Industry</a></h3>
+                            <p>The judges of the finale may double as investors, and guide the teams to become noteworthy start-ups and successful entrepreneurs of the future.</p>
+                           
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-3 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.service-one -->
+
+       
+
+        
+
+        <section class="service-two" id="about">
+            <img src="assets/images/shapes/service-shape-1-3.png" class="service-two__shape-1 float-bob-x" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 d-flex">
+                        <div class="my-auto">
+                            <div class="service-two__moc-box wow fadeInUp" data-wow-duration="1500ms">
+                                <img src="assets/images/DSC_0099.jpg" class="float-bob-x" alt="">
+                                <div class="about-funfact__wrap">
+                                    <div class="about-funfact__box">
+                                        <h3 style="color: black;"><span class="counter" style="color: black;">1000</span><!-- /.counter --><b>+</b></h3>
+                                        <p>Community</p>
+                                    </div><!-- /.about-funfact__box -->
+                                    <div class="about-funfact__box">
+                                        <h3 style="color: black;"><span class="counter" style="color: black;">180</span><!-- /.counter --><b>+</b></h3>
+                                        <p>Proposals</p>
+                                    </div><!-- /.about-funfact__box -->
+                                    <div class="about-funfact__box">
+                                        <h3 style="color: black;"><span class="counter" style="color: black;">35</span></h3>
+                                        <p>Finalists</p>
+                                    </div><!-- /.about-funfact__box -->
+                                </div><!-- /.about-funfact__wrap -->
+                            </div><!-- /.service-two__moc-box -->
+                        </div><!-- /.my-auto -->
+                    </div><!-- /.col-lg-5 -->
+                    <div class="col-xl-7">
+                        <div class="service-two__content">
+                            <div class="block-title block-title__two text-left">
+                                <h4 style="color: black;"> <img src="./assets/images/information.png"></img>About us </h4>
+                               
+                                <h3>What is IEEE Innovation Nation Sri Lanka?</h3>
+                                <p>IEEE Innovation Nation Sri Lanka strives to provide training, mentoring and financial support to budding entrepreneurs to take their ideas to the next level. Through the competition, we aim to expose the young minds to the global market as full fledged entrepreneurs, and create an opportunity for them to win seed-funding as well.</p>
+                            </div><!-- /.block-title text-center -->
+                            <div class="service-two__box-wrap">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="service-two__box">
+                                            <i class="seolight-icon-options"></i>
+                                          
+                                            <p style="color: white;">Come up with a great concept and learn the bread and butter of running a startup!</p>
+                                            <a href="service-details.html" class="service-two__box-link">Contact us <i
+                                                    class="seolight-icon-right-arrow"></i></a>
+                                            <!-- /.service-two__box-link -->
+                                        </div><!-- /.service-two__box -->
+                                    </div><!-- /.col-md-6 -->
+                                    <div class="col-md-6">
+                                        <div class="service-two__box">
+                                            <i class="seolight-icon-settings"></i>
+                                         
+                                            <p style="color: white;">Pitch your idea to a panel of investors and win seed funding and mentoring to make your idea a reality!</p>
+                                            <a href="#contact" class="service-two__box-link">Contact us <i
+                                                    class="seolight-icon-right-arrow"></i></a>
+                                            <!-- /.service-two__box-link -->
+                                        </div><!-- /.service-two__box -->
+                                    </div><!-- /.col-md-6 -->
+                                    
+                                </div><!-- /.row -->
+                            </div><!-- /.service-two__box-wrap -->
+
+                        </div><!-- /.service-two__content -->
+                    </div><!-- /.col-lg-7 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.service-two -->
+        <section class="service-three" style="background-color: #121212;" id="past">
+            <div class="container">
+                <div class="block-title block-title__two text-center">
+                    <h4><img src="./assets/images/time.png">&nbsp Past Years</h4>
+                    <h3 style="color: white;">We give the best Services</h3>
+                    <p></p>
+                </div><!-- /.block-title text-center -->
+                <div class="row">
+                      
+                        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1500ms" style="margin-top: 20px;">
+                            <div class="service-five__box">
+                                <div class="service-five__icon">
+                                    <img src="./assets/images/insl2019.png">
+                                </div><!-- /.service-five__icon -->
+                                <h3><a href="">INSL 2018</a></h3>
+                                <p>IEEE Innovation Nation Sri Lanka
+                                    (INSL) 2018 was launched with the goal of providing training, mentoring and financial
+                                    support to budding entrepreneurs of the island to take their idea to the next level.</p>
+                              
+                            </div><!-- /.service-five__box -->
+                       
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1500ms" style="margin-top: 20px; ">
+                            <div class="service-five__box">
+                                <div class="service-five__icon">
+                                    <img src="./assets/images/insl2019.png">
+                                </div><!-- /.service-five__icon -->
+                                <h3><a href="">INSL 2019</a></h3>
+                                <p>The 2nd installment of the IEEE Innovation Nation Sri Lanka commenced in
+                                   June 2019 with the selection of the final teams followed 8 workshops under 8 topics accordance with  IEEE Innovation Nation curriculum. </p>
+                              
+                            </div><!-- /.service-five__box -->
+                       
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-sm-4 wow fadeInUp" data-wow-duration="1500ms" style="margin-top: 20px;">
+                            <div class="service-five__box">
+                                <div class="service-five__icon">
+                                    <img src="./assets/images/insl2020.jpg">
+                                </div><!-- /.service-five__icon -->
+                                <h3><a href="">INSL 2020</a></h3>
+                                <p>The 3rd consecutive installment of the IEEE Innovation Nation Sri Lanka commenced in
+                                    May 2020 and all the IEEE INSL events conducted throughout the year were held online
+                                     due to the ongoing pandemic the world is facing.</p>
+                               
+                            </div><!-- /.service-five__box -->
+                       
+                        </div><!-- /.col-lg-4 -->
+                       
+                       
+                       
+                        
+                    
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+
+        
+
+       
+
+
+       
+
+        <section class="faq-one__home-one faq-one" style="background-color: #121212;" id="faq">
+            <div class="container">
+                <div class="block-title block-title__two text-left">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4><img src="./assets/images/qa.png"></img>Faq</h4>
+                            <h3 style="color: white;">Have a question? You can find the answers for the most common questions asked by the participants here.</h3>
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-lg-6 d-flex">
+                            <div class="my-auto">
+                                <p></p>
+                            </div><!-- /.my-auto -->
+                        </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+                </div><!-- /.block-title text-left -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="accrodion-grp" data-grp-name="faq-accrodion-1">
+                            <div class="accrodion active">
+                                <div class="accrodion-title">
+                                    <h4>Who should apply for INSL?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>If you are
+                                            An After A/L student
+                                            An undergraduate
+                                            A fresh graduate
+                                            You are eligible to apply for the competition.
+                                             </p>
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion ">
+                                <div class="accrodion-title">
+                                    <h4>What are the other facts that should be known by the candidates before applying?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <ul>
+                                            <li> Team can consist of 5 or less members.</li> 
+                                            <li> Team members can be from different universities. </li>
+                                            <li> The details of the team leader take for the further requirements. <br><span>E.g.: Code of the University representer or provincial coordinator</span></li>
+                                            <li> It is more efficient if the team can express their idea with the presentation or video.</li>
+                                        </ul>    
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>What is the provincial program?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do</p>
+                                              
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>Who are the provincial coordinator and University representor?</h4>
+                                </div>
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>Lorem ipsum dolor sit amet consecte tur adipiscing elit sed do</p>
+                                                
+                                    </div><!-- /.inner -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.faq-one__home-one -->
+
+        <section class="contact-two" style="background-color: #121212;" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex">
+                        <div class="my-auto">
+                            <div class="contact-two__content">
+                                <div class="block-title block-title__two text-left">
+                                    <h4 style="color: #121212;"><img src="./assets/images/call.png"></img>Contact Us</h4>
+                                    <h3>GET IN TOUCH</h3>
+                                    <p>Do not hesitate to contact us for any query on IEEE Innovation Nation Sri Lanka 2021.</p>
+                                </div><!-- /.block-title text-center -->
+                                <br>
+                                <p>Address: IEEE SL Section
+                                    Colombo, Sri Lanka</p>
+                                <p>Email: 
+                                inslpublicity@gmail.com</p>
+                                <div class="footer-widget__social">
+                                    <a href="https://www.facebook.com/IEEEINSL"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/IEEEINSL"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/ieeeinsl/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/ieee-innovation-nation-sri-lanka/"><i class="fab fa-linkedin"></i></a>
+                                </div><!-- /.footer-widget__social -->
+                            </div><!-- /.contact-two__content -->
+                        </div><!-- /.my-auto -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <form action="assets/inc/sendemail.php" class="contact-form-validated contact-two__form">
+                            <img src="assets/images/shapes/contact-shape-2.png" class="contact-two__form-shape" alt="">
+                            <div class="contact-two__form-inner wow fadeInRight" data-wow-duration="1500ms">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="Your name *" name="name">
+                                    </div><!-- /.col-md-6 -->
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="Email *" name="email">
+                                    </div><!-- /.col-md-6 -->
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Phone *" name="phone">
+                                    </div><!-- /.col-md-6 -->
+                                  
+                                    <div class="col-md-12">
+                                        <textarea name="message" placeholder="Message..."></textarea>
+                                    </div><!-- /.col-md-6 -->
+                                    <div class="col-md-12">
+                                        <button type="submit" class="thm-btn contact-two__btn">Contact us</button>
+                                        <!-- /.thm-btn contact-two__btn -->
+                                    </div><!-- /.col-md-12 -->
+                                </div><!-- /.row -->
+                            </div><!-- /.contact-two__form-inner -->
+                        </form><!-- /.contact-two__form -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.contact-two -->
+
+       <!-- <section class="blog-one blog-one__home-one">
+            <div class="container">
+                <div class="block-title block-title__two text-center">
+                    <h4>Blog</h4>
+                    <h3>Know something from our blog</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do <br> eiusmod tempor incididunt ut
+                        labore et dolore.</p>
+                </div><!-- /.block-title text-center -->
+                <div class="row">
+                    <!-- <div class="col-lg-4  col-sm-12 wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__image">
+                                <img src="assets/images/blog/blog-1-1.png" alt="">
+                                <a href="blog-details.html"><i class="fas fa-plus"></i></a>
+                            </div><!-- /.blog-one__image -->
+                            <!-- <div class="blog-one__content">
+                                <div class="blog-one__meta">
+                                    <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
+                                    <a href="#"><i class="fas fa-user"></i>Admin</a>
+                                </div><!-- /.blog-one__meta -->
+                                <!-- <h3><a href="blog-details.html">Strategy for Norway's Peion Fund Global.</a></h3>
+                                <a href="blog-details.html" class="thm-btn blog-one__btn"><span>View more</span></a>
+                                <!-- /.thm-btn blog-one__btn -->
+                            <!-- </div>
+                        </div><!-- /.blog-one__single -->
+                    <!-- </div> -->
+                    <!-- <div class="col-lg-4  col-sm-12">
+                        <div class="blog-one__single wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms"> -->
+                            <!-- <div class="blog-one__image">
+                                <img src="assets/images/blog/blog-1-2.png" alt="">
+                                <a href="blog-details.html"><i class="fas fa-plus"></i></a>
+                            </div>/.blog-one__image -->
+                            <!-- <div class="blog-one__content">
+                                <div class="blog-one__meta">
+                                    <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
+                                    <a href="#"><i class="fas fa-user"></i>Admin</a>
+                                </div><!-- /.blog-one__meta -->
+                                <!-- <h3><a href="blog-details.html">What we are capable of the usually gets discovered.</a>
+                                </h3>
+                                <a href="blog-details.html" class="thm-btn blog-one__btn"><span>View more</span></a> -->
+                                <!-- /.thm-btn blog-one__btn -->
+                            <!-- </div>
+                        </div><!-- /.blog-one__single -->
+                    <!-- </div> -->
+                    <!-- <div class="col-lg-4  col-sm-12">
+                        <div class="blog-one__single wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="200ms">
+                            <div class="blog-one__image">
+                                <img src="assets/images/blog/blog-1-3.png" alt="">
+                                <a href="blog-details.html"><i class="fas fa-plus"></i></a> -->
+                            <!-- </div><!-- /.blog-one__image -->
+                            <!-- <div class="blog-one__content">
+                                <div class="blog-one__meta">
+                                    <a href="#"><i class="fas fa-calendar-alt"></i>September 12, 2019</a>
+                                    <a href="#"><i class="fas fa-user"></i>Admin</a>
+                                </div><!-- /.blog-one__meta -->
+                                <!-- <h3><a href="blog-details.html">Food industry leaders often change their promoters.</a>
+                                </h3>
+                                <a href="blog-details.html" class="thm-btn blog-one__btn"><span>View more</span></a> -->
+                                <!-- /.thm-btn blog-one__btn -->
+                            </div><!-- /.blog-one__content -->
+                        </div>
+                    </div><!-- /.col-lg-4  col-sm-12 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+
+        <footer class="site-footer" style="background-color: #121212;">
+
+            <img src="assets/images/shapes/footer-bg-1-1.png" class="site-footer__shape-1" alt="">
+            <img src="assets/images/shapes/footer-bg-1-2.png" class="site-footer__shape-2" alt="">
+            <img src="assets/images/shapes/footer-bg-1-3.png" class="site-footer__shape-3" alt="">
+            <div class="site-footer__upper" style="background-color: #121212;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12">
+                            <div class="footer-widget footer-widget__about">
+                                <a href="index.html" class="footer-widget__logo">
+                                    <img src="assets/images/logo-3-1.png" alt="">
+                                </a>
+                                <p>IEEE SL Section
+                                    Colombo,<br> Sri Lanka</p>
+                                <p><span style="color: #f98d24;">Email: </span></p>
+                                <p>inslpublicity@gmail.com</p>
+                                <div class="footer-widget__social">
+                                    <a href="https://www.facebook.com/IEEEINSL"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/IEEEINSL"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/ieeeinsl/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/ieee-innovation-nation-sri-lanka/"><i class="fab fa-linkedin"></i></a>
+                                </div><!-- /.footer-widget__social -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 col-md-12 -->
+                        <div class="col-lg-5 col-md-12">
+                            <div class="footer-widget footer-widget__links">
+                                <br>
+                                <h3 class="footer-widget__title"><span>Links</span></h3><!-- /.footer-widget__title -->
+                                <ul class="list-unstyled footer-widget__links-list">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#benefits">Benefits</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#past">Past Years</a></li>
+                                    <li><a href="#faq">FAQ</a></li>
+                                    <li><a href="#contact">Contact Us</a></li>
+                                   
+                                </ul><!-- /.list-unstyled footer-widget__links-list -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-5 col-md-12 -->
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footer-widget footer-widget__newsletter">
+                                <br>
+                                <h3 class="footer-widget__title"><span>Follow Us</span></h3>
+                                <!-- /.footer-widget__title -->
+                             
+                                <ul class="list-unstyled footer-widget__links-list">
+                                    <li><a href="https://www.IEEE.org">IEEE.org</a></li>
+                                    <li><a href="https://www.IEEE.lk">IEEE.lk</a></li>
+                                    <li><a href="https://www.IEEEyp.lk">IEEEyp.lk</a></li>
+                                    <li><a href="https://www.IEEEwie.lk">IEEEwie.lk</a></li>
+                                   
+                                </ul><!-- /.list-unstyled footer-widget__links-list -->
+                               
+                              
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-4 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__upper -->
+            <div class="site-footer__bottom">
+                <div class="container text-center">
+                    <p>2021 © All rights reserved by <a href="#">YasithSam | Team INSL</a></p>
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__bottom -->
+        </footer><!-- /.site-footer -->
+    </div><!-- /.page-wrapper -->
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <div class="side-menu__block">
+
+
+        <div class="side-menu__block-overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.side-menu__block-overlay -->
+        <div class="side-menu__block-inner ">
+            <div class="side-menu__top justify-content-end">
+
+                <a href="#" class="side-menu__toggler side-menu__close-btn"><img
+                        src="assets/images/shapes/close-1-1.png" alt=""></a>
+            </div><!-- /.side-menu__top -->
+
+
+            <nav class="mobile-nav__container">
+                <!-- content is loading via js -->
+            </nav>
+            <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+            <div class="side-menu__content">
+                <p>Welcome to IEEE Innovation Nation Sri Lanka</p>
+                <p><a href="inslpublicity@gmail.com">inslpublicity@gmail.com</a> <br> 
+                <div class="side-menu__social">
+                    <a href="https://www.facebook.com/IEEEINSL"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/IEEEINSL"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ieeeinsl/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/ieee-innovation-nation-sri-lanka/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div><!-- /.side-menu__content -->
+        </div><!-- /.side-menu__block-inner -->
+    </div><!-- /.side-menu__block -->
+
+
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.search-popup__overlay -->
+        <div class="search-popup__inner">
+            <form action="#" class="search-popup__form">
+                <input type="text" name="search" placeholder="Type here to Search....">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div><!-- /.search-popup__inner -->
+    </div><!-- /.search-popup -->
+   <script>
+       (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let birthday = "June 30, 2021 11:59:59",
+      countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        let now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          let headline = document.getElementById("headline"),
+              countdown = document.getElementById("countdown"),
+              content = document.getElementById("content");
+
+          headline.innerText = "It's my birthday!";
+          countdown.style.display = "none";
+          content.style.display = "block";
+
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+  /*	gallery */
+$(document).ready(function(){
+
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+    
+    if(value == "all")
+    {
+        $('.filter').show('1000');
+    }
+    else
+    {
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');
+        
+    }
+
+            if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+        }
+            $(this).addClass("active");
+        });
+});
+/*	end gallery */
+   </script>
+  
+
+    <script src="assets/js/jquery-3.5.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
